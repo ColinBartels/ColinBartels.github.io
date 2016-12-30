@@ -1,1 +1,1 @@
-# ColinBartels.github.io
+http://students.washington.edu/bartelsc/portfolio
