@@ -3,9 +3,10 @@ var myApp = angular.module('myApp', ['ui.router']);
 
 // Configure app
 myApp.config(function($stateProvider, $locationProvider) {
-	
+
 	// remove # in url
   	$locationProvider.html5Mode(true);
+	$locationProvider.otherwise('/');
 
     $stateProvider
 	.state('home', {
