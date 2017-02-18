@@ -1,14 +1,7 @@
-<ifModule mod_rewrite.c>
-     RewriteEngine on
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
 
-    # Don't rewrite files or directories
-    RewriteCond %{REQUEST_FILENAME} -f [OR]
-    RewriteCond %{REQUEST_FILENAME} -d
-    RewriteRule ^ - [L]
-
-
-    RewriteRule ^ your root folder/index.html [L]
-      </ifModule>
-
-
-<base url="/"></base> in index.html file
+RewriteRule ^(.*) /index.html [NC,L]
