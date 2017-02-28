@@ -1,1 +1,1 @@
-http://students.washington.edu/bartelsc/portfolio
+http://colinbartels.me/
